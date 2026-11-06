@@ -6,9 +6,11 @@ This repository hosts third-party runtime components used by **Lumen RT**, a Min
 
 The release contains **`slangc.exe` v2026.8**, the unmodified Slang shader compiler from the official [Slang project](https://github.com/shader-slang/slang).
 
-Lumen RT uses it to compile certain shaders at runtime, including shaders needed to support custom rendering effects from other mods. The executable is distributed separately because CurseForge does not allow `.exe` files inside mod JARs.
+Lumen RT uses it to compile certain shaders at runtime, including shaders needed to support custom rendering effects from other mods.
 
-Lumen RT is being updated to download this executable automatically when Minecraft starts. **Manual installation is not intended to be required.**
+**`slangc.exe` is optional for Lumen RT itself.** The mod's core ray tracing features can run without this executable. However, some third-party mods' custom shader effects may not appear correctly in the ray-traced scene until the compiler is available.
+
+Lumen RT downloads this executable automatically in the background when Minecraft starts, if a verified copy is not already available. **Manual installation is normally not required.**
 
 ### Download
 
