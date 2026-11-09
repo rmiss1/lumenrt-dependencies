@@ -15,7 +15,7 @@ On supported systems, Lumen RT automatically downloads the matching executable i
 | Platform | Executable | Requirements |
 | --- | --- | --- |
 | Windows x64 | [slangc.exe v2026.21](https://github.com/rmiss1/lumenrt-dependencies/releases/download/slangc-v2026.21/slangc.exe) | Matching v2026.21 compiler DLLs, bundled with Lumen RT |
-| Linux x64 | [slangc-linux-x64 v2026.21](https://github.com/rmiss1/lumenrt-dependencies/releases/download/slangc-v2026.21/slangc-linux-x64) | glibc 2.27 or newer and matching v2026.21 compiler shared libraries, bundled with Lumen RT |
+| Linux x64 | [slangc-linux-x64 v2026.21](https://github.com/rmiss1/lumenrt-dependencies/releases/download/slangc-v2026.21/slangc-linux-x64) | glibc 2.27+, system libstdc++ providing GLIBCXX_3.4.29 (GCC 11+), and matching v2026.21 compiler shared libraries bundled with Lumen RT |
 
 Linux uses a native ELF executable, installed locally as `slangc`; a Windows `.exe` cannot run natively on Linux. These executables are **not standalone distributions** and must be used with the matching libraries. The mod JAR contains the DLL/SO libraries and their notices, while both compiler executables are downloaded from this release.
 
