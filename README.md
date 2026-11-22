@@ -26,10 +26,6 @@ Linux uses a native ELF executable, installed locally as `slangc`; a Windows `.e
 
 Compiler files and libraries are cached separately by operating system and compiler version. Linked shader caches include the matching compiler inventory, so an older compiler's cached output is not reused after an update. No Vulkan SDK or system-wide Slang installation is required for runtime compilation. This Lumen RT distribution supports x86_64/amd64 on Windows and Linux; macOS and ARM64 are not included.
 
-### Archived release
-
-[Windows Slang v2026.8](https://github.com/rmiss1/lumenrt-dependencies/releases/tag/slangc-windows-x64-v2026.8) is retained for older Lumen RT builds that reference its fixed download URL. New builds use v2026.21. Do not mix executables and libraries from different versions.
-
 ## Original Project and Licensing
 
 **Slang is an independent, open-source project.** Lumen RT is not the author of the Slang compiler and does not claim ownership of it.
